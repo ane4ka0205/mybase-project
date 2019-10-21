@@ -1,6 +1,16 @@
 #!/usr/bin/env groovy
 @Library('jenkins-library@master') _
 
-
-def common = new com.example.Pipeline()
-common.runPipeline()
+pipeline {
+    agent any
+    stages {
+        stage('Git Checkout') {
+            steps {
+            gitCheckout(
+                branch: "master",
+                url: "https://github.com/spring-projects/spring-petclinic.git"
+            )
+            }
+    }
+    }
+}
