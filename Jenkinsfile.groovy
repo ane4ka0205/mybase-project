@@ -3,10 +3,10 @@
 
 node {https://github.com/ane4ka0205/jenkins-library.git
 
-    stage('hello world'){
+    stage('hello'){
         gitCheckout.printHello()
     }
-    stage('hello world'){
+    stage('bye'){
         gitCheckout.printBye()
     }
 }
