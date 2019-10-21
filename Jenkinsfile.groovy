@@ -11,6 +11,11 @@ pipeline {
                 url: "https://github.com/ane4ka0205/mybase-project.git"
             )
             }
-    }
+        stage('Hello') {
+            steps {
+                echo "Hello world"
+                }
+            }
+        }
     }
 }
