@@ -3,8 +3,12 @@
 
 node {https://github.com/ane4ka0205/jenkins-library.git
 
-gitCheckout.printHello()
-gitCheckout.printBye()
+    stage('hello world'){
+        gitCheckout.printHello()
+    }
+    stage('hello world'){
+        gitCheckout.printBye()
+    }
 }
 
 
